@@ -1,65 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-	<style type="text/css">
-		.sidenav {
-			height: 100%;
-			widows: 160px;
-			position: fixed;
-			z-index: 1;
-			top:0;
-			left:0;
-			background-color:#111;
-			overflow-x: :hidden;
-			padding-top: 20px;
-		}
-		
-		.sidenav a {
-			padding: 6px 8px 6px 16px;
-			text-decoration: none;
-			font-size: 25px;
-			font:#818181;
-			display: block;
-		}
-
-		.sidenav a:hover{
-			color:#f1f1f1;
-		}
-		
-		.main{
-			margin-left:160px;
-			padding: 0px 10px;
-		}
-
-	</style>
-
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-	<title>My Website</title>
+    <title>Arwildo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
 </head>
-	
-<body> 
-	<div class="sidenav">
-		<a href="/">Home</a>
-		<a href="http://127.0.0.1:8000/create/">Create</a>
-		<a href="http://127.0.0.1:8000/view/">View</a>
-	</div>
+<body>
+    <div class="nav">
+        <div class="contactMe">
+            <a href="#"><img src="static/Chat_Blue.png" alt="Chat Logo">Contact Me</a>
+        </div>
+        <div class="navIcons">
+            <a href="#"><img src="static/Youtube_Gray.png" alt="Youtube Logo"></a>
+            <a href="#"><img src="static/Dribbble_Gray.png" alt="Dribbble Logo"></a>
+            <a href="#"><img src="static/Github_Gray.png" alt="Github Logo"></a>
+        </div>
+    </div>
 
-	<div id="content", name="content", class="main">
-		<div class="row justify-content-center">
-			<div class="col-8">
-				<h1 class="mt-2">My Site</h1>
-				<hr class="mt-0 mb-4">
-				{% block content %}
-				{% endblock %}
-			</div>
-		</div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <div class="landing">
+        <div class="landingWrapper">
+            <div class="landingL">
+                <h1>Arwildo Belekubun.</h1>
+                <p>Hello, my name is Arwildo. <br> I like to train 
+                    <span class="blue">Deep Neural Nets</span>
+                    on large datasets &amp; I like to build a <span class="blue">Web App</span>.
+                </p>
+                <ul>
+                    <li><p>Data Science</p></li>
+                    <li><p>Machine Learning</p></li>
+                    <li><p>Web Design</p></li>
+                    <li><p>UI/UX</p></li>
+                </ul>
+            </div>
+            <div class="landingR">
+                <img src="static/Profile.png" alt="Arwildo Belekubun Pic" width="300px">
+            </div>
+        </div>
+        <img src="static/Scroll.png" alt="scroll down" class="scroll">
+    </div>
+
+    <div class="skills">
+        <h2>Skills</h2>
+        <p>Over 7 years of design experience using <br> these programs.</p>
+        <div class="programs">
+            <img src="static/Xd.png" alt="Xd icon">
+            <img src="static/Ps.png" alt="Ps icon">
+            <img src="static/Ai.png" alt="Ai icon">
+            <img src="static/Ae.png" alt="Ae icon">
+        </div>
+    </div>
+
+    <div class="work clearfix">
+        <div class="workText">
+            <h1>Fashion Classification</h1>
+            <a href="#"><h5>View Project</h5></a>
+            <div class="underline"></div>
+        </div>
+        <ul>
+            <li><a href="#"><img src="static/Dribbble_Black.png" 
+                alt="Dribbble icon"></a></li>
+            <li><a href="#"><img src="static/Be_Black.png" 
+                alt="Be icon"></a></li>
+            <li><a href="#"><img src="static/Youtube_Black.png" 
+                alt="Youtube icon"></a></li>
+        </ul>
+        <img src="static/Project_01.png" alt="Project image" 
+            class="working">
+    </div>
+
 </body>
 </html>
