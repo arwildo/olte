@@ -44,7 +44,7 @@ h2 {
 	font-weight: 400;
 	color: #17191a;
 }
-h3 {
+h5 {
 	font-size: 20px;
 	margin-top: 10px;
 	color: #17191a;
@@ -132,7 +132,7 @@ ul {
 }
 .work > .workText {
 	position: absolute;
-	top: 85;
+	top: 85px;
 }
 .work > .workText > .underline {
 	display: block;
@@ -144,9 +144,9 @@ ul {
 .work > .workImg {
 	width: 85%;
 	float: right;
-	-webkit-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.06);
-	-moz-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.06);
-	box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.06);
+	-webkit-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.05);
+	-moz-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.05);
+	box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.05);
 }
 .work ul {
 	position: absolute;
@@ -156,8 +156,66 @@ ul {
 .work ul li {
 	margin-top: 20px;
 }
-/*-------- Work 02 --------*/
 
+/*-------- Work 02 --------*/
+.work2 {
+	width: 100%;
+	position: relative;
+	margin-bottom: 20em;
+}
+.work2 > .workText {
+	position: absolute;
+	top: 85px;
+	right: 0;
+	text-align: right;
+}
+.work2 > .workText > .underline {
+	display: block;
+	background-color: #027bff;
+	height: 3px;
+	width: 61px;
+	margin-top: 5px;
+	float: right;
+}
+.work2 > .workImg {
+	width: 85%;
+	float: left;
+	-webkit-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.05);
+	-moz-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.05);
+	box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.05);
+}
+.work2 ul {
+	position: absolute;
+	bottom: 0;
+	left: 86%;
+}
+.work2 ul li {
+	margin-top: 20px;
+}
 /*-------- Work 01 and 02 --------*/
+.work a,
+.work2 a {
+	text-decoration: none;
+	color: #17191a;
+}
 
 /*-------- Footer --------*/
+.footer {
+	background-image: url(/static/Github_Blue_Large.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 320px;
+	padding-bottom: 7em;
+	text-align: center;
+}
+.footer a {
+	color: #027bff;
+	text-decoration: none;
+}
+.underLineSmall {
+	display: block;
+	height: 3px;
+	width: 41px;
+	margin: 5px auto 0 auto;
+	background-color: #027bff;
+}
