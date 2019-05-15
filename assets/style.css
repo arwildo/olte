@@ -47,7 +47,7 @@ h2 {
 h5 {
 	font-size: 20px;
 	margin-top: 10px;
-	color: #17191a;
+	color: unset;
 }
 p {
 	color: #8f9ea5;
@@ -56,13 +56,13 @@ p {
 	margin-top: 10px;
 	font-size: 20px;
 }
+
 /*-------- Nav --------*/
 .nav {
 	display: flex;
 	align-items: center;
 	height: 100px;
 }
-.contactMe,
 .navIcons {
 	flex: 1;
 }
@@ -75,8 +75,22 @@ p {
 	display: inline-block;
 	vertical-align: middle;
 }
+.navIcons a,
+.contactMe a:hover,
+.contactMe img:hover {
+	color: #17191a;
+}
 .navIcons a {
 	margin-left: 40px;
+}
+
+.navIcons a i {
+	color: #8f9ea5;
+	width: 26px;
+	height: 26px;
+}
+.navIcons a i:hover {
+	color: #027bff;
 }
 .contactMe a {
 	color: #027bff;
@@ -131,7 +145,7 @@ ul {
 	margin-bottom: 20em;
 }
 .work > .workText {
-	position: absolute;
+	position: relative;
 	top: 85px;
 }
 .work > .workText > .underline {
@@ -144,9 +158,9 @@ ul {
 .work > .workImg {
 	width: 85%;
 	float: right;
-	-webkit-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.05);
-	-moz-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.05);
-	box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.05);
+	-webkit-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.07);
+	-moz-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.07);
+	box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.07);
 }
 .work ul {
 	position: absolute;
@@ -164,7 +178,7 @@ ul {
 	margin-bottom: 20em;
 }
 .work2 > .workText {
-	position: absolute;
+	position: relative;
 	top: 85px;
 	right: 0;
 	text-align: right;
@@ -198,7 +212,10 @@ ul {
 	text-decoration: none;
 	color: #17191a;
 }
-
+.work a:hover,
+.work2 a:hover {
+	color: #027bff;
+}
 /*-------- Footer --------*/
 .footer {
 	background-image: url(/static/Github_Blue_Large.png);
@@ -212,10 +229,42 @@ ul {
 	color: #027bff;
 	text-decoration: none;
 }
+.footer a:hover {
+	color: #17191a;
+}
 .underLineSmall {
 	display: block;
 	height: 3px;
 	width: 41px;
 	margin: 5px auto 0 auto;
 	background-color: #027bff;
+}
+/*-------- Media Responsive --------*/
+
+/* 
+	##Device = Low Resolution Tablets, Mobiles (Landscape)
+	##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+	body {
+		width: 100%;
+	}
+}
+
+/* 
+	##Device = Most of the Smartphones Mobiles (Portrait)
+	##Screen = B/w 320px to 490px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+	* {
+		padding: 1px;
+	}
+	body {
+		width: 146%;
+	}
+	.navIcons a {
+		margin-left: 20px;
+	}
 }
