@@ -1,102 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <title>Arwildo</title>
+    <style type="text/css">
+        .sidenav {
+            height: 100%;
+            widows: 160px;
+            position: fixed;
+            z-index: 1;
+            top:0;
+            left:0;
+            background-color:#111;
+            overflow-x: hidden;
+            padding-top:20px;
+        }
+        
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            font:#818181;
+            display: block;
+        }
+
+        .sidenav a:hover{
+            color:#f1f1f1;
+        }
+        
+        .main{
+            margin-left:160px;
+            padding: 0px 10px;
+        }
+
+    </style>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="static/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My Website</title>
 </head>
-<body>
-    <div class="nav">
-        <div id="modalBtn" class="contactMe">
-            <a href="#"><i class="fa fa-comment fa-2x"></i>Contact Me</a>
-        </div>
-        <div class="navIcons" style="font-size:0.6rem;">
-            <a href="#"><i class="fa fa-instagram fa-3x"></i></a>
-            <a href="#"><i class="fa fa-github fa-3x"></i></a>
-            <a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a>
-        </div>
+    
+<body> 
+    <div class="sidenav">
+        <a href="/">Home</a>
+        <a href="http://127.0.0.1:8000/create/">Create</a>
+        <a href="http://127.0.0.1:8000/view/">View</a>
     </div>
 
-    <div class="landing">
-        <div class="landingWrapper">
-            <div class="landingL">
-                <h1>Arwildo Belekubun.</h1>
-                <p>Hello, my name is Arwildo. <br> I like to train 
-                    <span class="blue">Deep Neural Nets</span>
-                    on large datasets &amp; I like to build a <span class="blue">Web App</span>.
-                </p>
-                <ul>
-                    <li><p>Data Science</p></li>
-                    <li><p>Machine Learning</p></li>
-                    <li><p>Web Design</p></li>
-                    <li><p>UI/UX</p></li>
-                </ul>
-            </div>
-            <div class="landingR">
-                <img src="static/Profile.png" alt="Arwildo Belekubun Pic" width="300px">
+    <div id="content", name="content", class="main">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <h1 class="mt-2">My Site</h1>
+                <hr class="mt-0 mb-4">
+                {% block content %}
+                {% endblock %}
             </div>
         </div>
-        <img src="static/Scroll.png" alt="scroll down" class="scroll">
     </div>
-
-    <div class="skills">
-        <h2>Skills</h2>
-        <p>Over 5 years experience on</p>
-        <div class="programs">
-            <img src="static/Python.png" alt="Python icon">
-            <img src="static/JS.png" alt="JavaScript icon">
-            <img src="static/HTML.png" alt="HTML icon">
-            <img src="static/CSS.png" alt="CSS icon">
-            <br><p></p>
-            <img src="static/Xd.png" alt="Xd icon">
-            <img src="static/Ps.png" alt="Ps icon">
-            <img src="static/Ai.png" alt="Ai icon">
-            <img src="static/Ae.png" alt="Ae icon">
-        </div>
-    </div>
-
-    <div class="work clearfix">
-        <div class="workText">
-            <h1>Project 1</h1>
-            <a href="#"><h5>View Project</h5></a>
-            <div class="underline"></div>
-        </div>
-            <div class="textBox">
-                <p>Project description Project description </p>
-                <li><a href="#"><i class="fa fa-github fa-lg"></i></a></li>
-            </div>
-        <img src="static/Project1.png" alt="Project image" class="workImg">
-    </div>
-
-    <div class="work2 clearfix">
-        <div class="workText">
-            <h1>Project 2</h1>
-            <a href="#"><h5>View Project</h5></a>
-            <div class="underline"></div>
-        </div>
-            <div class="textBox">
-                <p>Project description Project description </p>
-                <li><a href="#"><i class="fa fa-github fa-lg"></i></a></li>
-            </div>
-        <img src="static/Project2.jpg" alt="Project image" class="workImg">
-    </div>
-
-    <div class="footer">
-        <a href="#"><h3>More on Github</h3></a>
-        <div class="underLineSmall"></div>
-    </div>
-
-    <div id="simpleModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="closeBtn"><i class="fa fa-times"></i></span>
-            </div>
-            <center><p><i class="fa fa-envelope"></i> arwildo@gmail.com</p></center>
-        </div>
-    </div>
-
-<script src="static/main.js"></script>
 </body>
 </html>
